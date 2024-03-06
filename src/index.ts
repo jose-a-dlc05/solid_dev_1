@@ -27,6 +27,10 @@ class ChickFilARestaurant {
 		);
 	}
 
+	public logOrder(): { customerName: string; items: string[] }[] {
+		return this.orders;
+	}
+
 	public hireEmployee(name: string, position: string): void {
 		this.employees.push({ name, position });
 	}
@@ -35,6 +39,9 @@ class ChickFilARestaurant {
 		this.employees = this.employees.filter(
 			(employee) => employee.name !== name
 		);
+	}
+	public logEmployees(): { name: string; position: string }[] {
+		return this.employees;
 	}
 }
 
