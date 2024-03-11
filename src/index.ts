@@ -3,8 +3,6 @@ class ChickFilARestaurant {
 	private orders: { customerName: string; items: string[] }[] = [];
 	private employees: { name: string; position: string }[] = [];
 
-	constructor() {}
-
 	public addMenuItem(item: string): void {
 		this.menuItems.push(item);
 	}
